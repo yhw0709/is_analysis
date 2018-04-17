@@ -1,0 +1,7 @@
+@startuml
+object 借书卡{
+     CardId:12313132
+     CustomId:254646
+     LostTag:0
+}
+@enduml

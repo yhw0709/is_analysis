@@ -1,0 +1,9 @@
+@startuml
+object 借书人{
+    CustomId:254646
+    password：****
+    已借阅书籍：《100个为什么》
+    已归还图书：无
+    到期图书：无
+}
+@enduml

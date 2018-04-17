@@ -1,0 +1,8 @@
+@startuml
+ object 老师管理员{
+    techer_ManagerId:teacher_manager1
+    Password:*****
+    已存在借书卡：21
+    已登记图书：120
+ }
+@enduml

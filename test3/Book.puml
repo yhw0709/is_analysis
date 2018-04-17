@@ -1,0 +1,10 @@
+@startuml
+object 书籍{
+     BookId:1231321212
+     BookName：《100个为什么》
+     Arthur：匿名
+     ISBN：navida-gtx-1080-ti
+     Publish：蓝思科技
+     price：99.8
+}
+@enduml

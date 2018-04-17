@@ -1,0 +1,9 @@
+@startuml
+object 学生管理员{
+    Stu_ManagerId:stu_manger1
+    Password:****
+    已借出图书：5
+    已归还图书：2
+    预约图书：2
+ }
+@enduml
