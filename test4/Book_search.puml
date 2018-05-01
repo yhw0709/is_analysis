@@ -1,0 +1,13 @@
+@startuml
+skinparam sequenceArrowThickness 2
+skinparam maxmessagesize 60
+
+actor "读者or管理员" as U
+participant "系统" as A
+participant "书" as C
+
+U -> A: 输入ISBN或书名
+A -> C: 查询图书信息
+C-> A: 返回查询信息
+A -> U: 输出查询结果
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+skinparam sequenceArrowThickness 2
+skinparam maxmessagesize 60
+
+actor "读者or管理员" as U
+participant "系统" as A
+participant "书库" as B
+participant "书" as C
+participant "借书记录" as D
+
+U -> A: 图书编号或ISBN
+A -> B: 检查是否可借
+B -> C: 提交申请
+C -> B: 响应请求
+B -> A: 修改库存
+A -> D: 创建借书记录
+A -> U: 成功借出图书
+@enduml

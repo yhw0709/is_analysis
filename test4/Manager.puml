@@ -1,0 +1,18 @@
+@startuml
+skinparam sequenceArrowThickness 2
+skinparam maxmessagesize 60
+
+actor 管理员 as U
+participant "系统" as A
+participant "读者" as B
+
+U->A:管理读者
+U->A:输入查询信息
+A->B:查询读者
+B->A:查询结果
+A->U:显示查询结果
+U->A:提交修改后的读者信息
+A->B:修改读者信息
+B->A:修改成功
+A->U:修改成功
+@enduml
