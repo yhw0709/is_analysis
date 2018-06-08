@@ -1,0 +1,19 @@
+@startuml
+
+actor 学生 as A
+participant "系统" as B
+participant "课程" as C
+participant "实验" as D
+participant "学生" as E
+
+A -> B :根据用户名和密码登录系统
+activate B
+B -> C :查看并选择课程
+deactivate B
+activate C
+C -> D :查看并选择实验项目
+deactivate C
+activate D
+D -> E :选择并查看学生的成绩
+deactivate D
+@enduml

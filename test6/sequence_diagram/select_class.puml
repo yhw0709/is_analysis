@@ -1,0 +1,35 @@
+@startuml
+
+actor 教务处 as A
+participant "系统" as B
+participant "课程" as C
+actor 教师 as D
+actor 学生 as E
+
+A->B: 登陆系统
+B->C:建立课程
+activate C
+C->D:招募任课老师
+deactivate C
+activate D
+D->C: 任课老师同意后开设课程
+deactivate D
+activate C
+C->B:公布课程
+deactivate C
+activate B
+B->E:发送开课通知
+deactivate B
+activate E
+E->B:登陆系统
+deactivate E
+activate B
+B->C:选课
+deactivate B
+activate C
+C->B:选课成功
+deactivate C
+activate B
+B->E:反馈信息
+deactivate B
+@enduml
