@@ -16,7 +16,7 @@
 无
 
 ## 3. 界面设计
-- 界面参照: https://github.com/yhw0709/is_analysis/test6/ui/logout.html
+- 界面参照:  https://yhw0709.github.io/is_analysis/test6/ui/logout.html
 - API接口调用
     - 接口1：[logout](../interface/logout.md)
 
